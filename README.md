@@ -2,6 +2,15 @@
 
 on Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
 
+The code that is benchmarked is essentially:
+
+```cpp
+    Eigen::Matrix4f mat1 = Eigen::Matrix4f::Random(4, 4);
+    Eigen::Matrix4f mat2 = Eigen::Matrix4f::Random(4, 4);
+    Eigen::Matrix4f mat3;
+    mat3 = mat1 * mat2;
+```
+
 ## float
 
 |eigen version| arch | ubuntu 1404 | ubuntu 1604 |
