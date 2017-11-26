@@ -25,6 +25,14 @@ The code that is benchmarked is essentially:
 |3.2.9|6992|11037|6238|
 |3.3.0|6318|5053|5069|
 
+# gcc compile flags
+
+```
+CFLAGS=-I/usr/local/include/eigen3 -std=c++11 -Ofast -march=native
+```
+
+If `-march=native` is removed, the performance does not detiriorate.
+
 # gcc versions
 
 - arch: 7.2.0
