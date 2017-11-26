@@ -33,9 +33,9 @@ workdir eigen_matrix4_benchmark
 run make
 run ./main
 
-# run again with eigen 3.3.0
+# run again with eigen 3.3.4
 workdir /root/eigen/build
-run git checkout 3.3.0
+run git checkout 3.3.4
 run cmake -DCMAKE_BUILD_TYPE=Release ..
 run make
 run make install
